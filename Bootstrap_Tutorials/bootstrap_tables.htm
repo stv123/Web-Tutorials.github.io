@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>BOOTSTRAP : Tables</title>
+    <link href="CSS/tutes.css" rel="Stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+    <table id="header1">
+    <tr><td style="width:25%">
+    <img src="images/lg.png"alt="logo" width="230px"/>
+    </td>
+    <td class="style1"> <span class="style3">Welcome to Web Tutorial</span><br />
+        <span class="style2">An Easy Way to Learn</span>
+    </td></tr>
+    </table>	
+	<hr />
+	<div class="menu">
+				
+	<ul id="nav">
+		<li><a href="../../index.html">HOME </a></li>
+		<li><a href="../../Aboutus/index.html">ABOUT US </a></li>
+		<li><a href="wt.pdf" target="_blank">SYLLABUS </a></li>
+		<li><a href="#">SUBJECTS </a>
+		<ul>
+			<li><a href="../Html_Tutorials/html_introduction.htm" target="_blank">HTML</a></li>
+			<li><a href="../CSS_Tutorials/css_introduction.htm" target="_blank">CSS</a></li>
+			<li><a href="../JavaScript_Tutorials/js_introduction.htm" target="_blank">JavaScript</a></li>
+			<li><a href="../JQuery_Tutorials/jq_introduction.htm" target="_blank">Jquery</a></li>
+			<li><a href="../PHP_Tutorials/php_introduction.htm" target="_blank">PHP</a></li>
+			<li><a href="bootstrap_introduction.htm" target="_blank">BootStrap</a></li>
+		</ul>
+		</li>
+		<li><a href="../../Quiz/index.php">QUIZ </a></li>
+		<li><a href="../../Contact/contact-form.php">CONTACT US </a></li>
+	</ul>
+
+	</div>
+
+    <div class="flt">
+        <div class="left"><img src="images\boots_lg.jpg"/>
+            <table class="list">
+               <tr><td><a href="bootstrap_introduction.htm">Bootstrap-Introdution</a></td></tr>
+                <tr><td><a href="bootstrap_environment.htm">Bootstrap-Environment Setup<a></td></tr>
+                <tr><td><a href="bootstrap_gridsystem.htm">Bootstrap-Grid System</a></td></tr>
+                <tr><td><a href="bootstrap_typography.htm">Bootstrap-Typography</a></td></tr>
+                <tr><td><a href="bootstrap_tables.htm">Bootstrap-Tables</a></td></tr>
+                <tr><td><a href="bootstrap_forms.htm">Bootstrap-Forms</a></td></tr>
+                <tr><td><a href="bootstrap_buttons.htm">Bootstrap-Button</a></td></tr>
+                <tr><td><a href="bootstrap_responsive.htm">Bootstrap-Responsive</a></td></tr>
+                <tr><td><a href="bootstrap_images.htm">Bootstrap-Images</a></td></tr>
+                <tr><td><a href="bootstrap_glyphicons.htm">Bootstrap-Glyphicons</a></td></tr>
+                <tr><td><a href="bootstrap_buttongroup.htm">Bootstrap-Button Groups</a></td></tr>
+                <tr><td><a href="bootstrap_inputgroup.htm">Bootstrap-Input Groups</a></td></tr>
+            </table>
+        </div>
+    </div>
+
+        <div class="center">
+        <div class="content">
+         <div class="header"><img src="images\boots_title.jpg" style="width:100%; height:100%; " /></div>
+    
+    <div class="head">
+    BOOTSTRAP:-Tables
+    </div>
+            <div class="inn_head">Tables </div>
+            <div class="p">Bootstrap provides a clean layout for building tables. Some of the table elements supported by Bootstrap are −</div><br />
+            <table class="alt">
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;	</td>
+            <td>Wrapping element for displaying data in a tabular format
+</td>
+        </tr>
+        <tr>
+            <td>&lt;thead&gt;	</td>
+            <td>Container element for table header rows (&lt;tr&gt;) to label table columns.</td>
+        </tr>
+        <tr>
+            <td>&lt;tbody&gt;	</td>
+            <td>Container element for table rows (&lt;tr&gt;) in the body of the table.</td>
+        </tr>
+        <tr>
+            <td>&lt;tr&gt;	</td>
+            <td>Container element for a set of table cells (&lt;td&gt; or &lt;th&gt;) that appears on a single row.</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt;	</td>
+            <td>Default table cell.</td>
+        </tr>
+        <tr>
+            <td>&lt;th&gt;	</td>
+            <td>Special table cell for column (or row, depending on scope and placement) labels. Must be used within a &lt;thead&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;captiongt&gt;	</td>
+            <td>Description or summary of what the table holds.</td>
+        </tr>
+    </table><br />
+    <br /><hr />    
+    <div class="head">Basic Table:</div>
+    <div class="p">If you want a nice, basic table style with just some light padding and horizontal dividers, add the base class of .table to any table as shown in the following example −
+           <br> <textarea id="txta" rows="11" cols="65" readonly>
+
+         <table class = "table">
+         <caption>Basic Table Layout</caption>
+   
+        <thead><tr><th>Name</th><th>City</th></tr></thead>
+        <tbody>
+            <tr><td>Tanmay</td><td>Bangalore</td></tr>
+            <tr><td>Sachin</td><td>Mumbai</td></tr>
+        </tbody>
+        </table>
+            </textarea></div>
+            <br /><hr />
+    <div class="head">Optional Table Classes:</div>
+            <div class="p">Along with the base table markup and the .table class, there are a few additional classes that you can use to style the markup. Following sections will give you a glimpse of all these classes.</div>
+            <div class="inn_head">Striped Table</div>
+            <div class="p">By adding the .table-striped class, you will get stripes on rows within the <tbody> as seen in the following example −
+            <br><textarea id="txta" rows="16" cols="65" readonly>
+
+            <table class = "table table-striped">
+            <caption>Striped Table Layout</caption>
+   
+            <thead>
+            <tr><th>Name</th><th>City</th><th>Pincode</th></tr>
+            </thead>
+   
+            <tbody>
+            <tr><td>Tanmay</td><td>Bangalore</td><td>560001</td></tr>
+            <tr><td>Sachin</td><td>Mumbai</td><td>400003</td></tr>
+            <tr><td>Uma</td><td>Pune</td><td>411027</td></tr>
+            </tbody>
+   
+            </table></textarea></div>
+            <br /><hr />
+            <div class="head">Bordered Table</div>
+            <div class="p">By adding the .table-bordered class, you will get borders surrounding every element and rounded corners around the entire table as seen in the following example −
+          <br>  <textarea id="txta" rows="16" cols="65" readonly>
+
+            <table class = "table table-bordered">
+            <caption>Bordered Table Layout</caption>
+   
+            <thead>
+            <tr><th>Name</th><th>City</th><th>Pincode</th></tr>
+            </thead>
+   
+            <tbody>
+            <tr><td>Tanmay</td><td>Bangalore</td><td>560001</td></tr>
+            <tr><td>Sachin</td><td>Mumbai</td><td>400003</td></tr>
+            <tr><td>Uma</td><td>Pune</td><td>411027</td></tr>
+            </tbody>
+	
+            </table></textarea></div>
+            <br /><hr />
+            <div class="head">Hover Table</div>
+            <div class="p">By adding the .table-hover class, a light gray background will be added to rows while the cursor hovers over them, as seen in the following example −
+           <br> <textarea id="txta" rows="16" cols="65" readonly>
+
+            <table class = "table table-hover">
+            <caption>Hover Table Layout</caption>
+   
+            <thead>
+            <tr><th>Name</th><th>City</th><th>Pincode</th></tr>
+            </thead>
+   
+            <tbody>
+            <tr><td>Tanmay</td><td>Bangalore</td><td>560001</td></tr>
+            <tr><td>Sachin</td><td>Mumbai</td><td>400003</td></tr>
+            <tr><td>Uma</td><td>Pune</td><td>411027</td></tr>
+            </tbody>
+   
+            </table></textarea></div>
+            <br /><hr />
+            <div class="head">Condensed Table</div><br>
+            <div class="p">By adding the .table-condensed class, row padding is cut in half to condense the table. as seen in the following example. This is useful if you want any denser information.
+           <br> <textarea id="txta" rows="16" cols="65" readonly>
+
+            <table class = "table table-condensed">
+            <caption>Condensed Table Layout</caption>
+   
+            <thead>
+            <tr><th>Name</th><th>City</th><th>Pincode</th></tr>
+            </thead>
+   
+            <tbody>
+            <tr><td>Tanmay</td><td>Bangalore</td><td>560001</td></tr>
+            <tr><td>Sachin</td><td>Mumbai</td><td>400003</td></tr>
+            <tr><td>Uma</td><td>Pune</td><td>411027</td></tr>
+            </tbody>
+   
+            </table></textarea></div>
+<br /><hr />
+            <div class="head">Responsive Tables</div><br>
+            <div class="p">By wrapping any .table in .table-responsive class, you will make the table scroll horizontally up to small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.
+            <br><textarea id="txta" rows="21" cols="65" readonly>
+
+      <div class = "table-responsive">
+      <table class = "table">
+      
+      <caption>Responsive Table Layout</caption>
+      
+      <thead>
+      <tr><th>Product</th><th>Payment Date</th><th>Status</th></tr>
+      </thead>
+      
+      <tbody>
+      <tr><td>Product1</td><td>23/11/2013</td><td>Pending</td></tr>
+      <tr><td>Product2</td><td>10/11/2013</td><td>Delivered</td></tr>
+      <tr><td>Product3</td><td>20/10/2013</td><td>In Call to confirm</td></tr>
+      <tr><td>Product4</td><td>20/10/2013</td><td>Declined</td></tr>
+      </tbody>
+      
+      </table>
+      </div>  	
+      </textarea></div>
+
+ 
+	
+    </div>
+    </div>
+   </div>
+
+   
+</body>
+</html>
+                    
+                    

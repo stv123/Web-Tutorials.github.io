@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>BOOTSTRAP : Input Groups</title>
+    <link href="CSS/tutes.css" rel="Stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+    <table id="header1">
+    <tr><td style="width:25%">
+    <img src="images/lg.png"alt="logo" width="230px"/>
+    </td>
+    <td class="style1"> <span class="style3">Welcome to Web Tutorial</span><br />
+        <span class="style2">An Easy Way to Learn</span>
+    </td></tr>
+    </table>	
+	<hr />
+	<div class="menu">
+				
+	<ul id="nav">
+		<li><a href="../../index.html">HOME </a></li>
+		<li><a href="../../Aboutus/index.html">ABOUT US </a></li>
+		<li><a href="../../wt.pdf" target="_blank">SYLLABUS </a></li>
+		<li><a href="#">SUBJECTS </a>
+		<ul>
+			<li><a href="../Html_Tutorials/html_introduction.htm" target="_blank">HTML</a></li>
+			<li><a href="../CSS_Tutorials/css_introduction.htm" target="_blank">CSS</a></li>
+			<li><a href="../JavaScript_Tutorials/js_introduction.htm" target="_blank">JavaScript</a></li>
+			<li><a href="../JQuery_Tutorials/jq_introduction.htm" target="_blank">Jquery</a></li>
+			<li><a href="../PHP_Tutorials/php_introduction.htm" target="_blank">PHP</a></li>
+			<li><a href="bootstrap_introduction.htm" target="_blank">BootStrap</a></li>
+		</ul>
+		</li>
+		<li><a href="../../Quiz/index.php">QUIZ </a></li>
+		<li><a href="../../Contact/contact-form.php">CONTACT US </a></li>
+	</ul>
+
+	</div>
+
+    <div class="flt">
+        <div class="left"><img src="images\boots_lg.jpg"/>
+            <table class="list">
+                <tr><td><a href="bootstrap_introduction.htm">Bootstrap-Introdution</a></td></tr>
+                <tr><td><a href="bootstrap_environment.htm">Bootstrap-Environment Setup<a></td></tr>
+                <tr><td><a href="bootstrap_gridsystem.htm">Bootstrap-Grid System</a></td></tr>
+                <tr><td><a href="bootstrap_typography.htm">Bootstrap-Typography</a></td></tr>
+                <tr><td><a href="bootstrap_tables.htm">Bootstrap-Tables</a></td></tr>
+                <tr><td><a href="bootstrap_forms.htm">Bootstrap-Forms</a></td></tr>
+                <tr><td><a href="bootstrap_buttons.htm">Bootstrap-Button</a></td></tr>
+                <tr><td><a href="bootstrap_responsive.htm">Bootstrap-Responsive</a></td></tr>
+                <tr><td><a href="bootstrap_images.htm">Bootstrap-Images</a></td></tr>
+                <tr><td><a href="bootstrap_glyphicons.htm">Bootstrap-Glyphicons</a></td></tr>
+                <tr><td><a href="bootstrap_buttongroup.htm">Bootstrap-Button Groups</a></td></tr>
+                <tr><td><a href="bootstrap_inputgroup.htm">Bootstrap-Input Groups</a></td></tr>
+            </table>
+        </div>
+    </div>
+
+        <div class="center">
+        <div class="content">
+         <div class="header"><img src="images\boots_title.jpg" style="width:100%; height:100%; " /></div>
+    
+    <div class="head">BOOTSTRAP:-Input Groups</div>
+            <div class="inn_head">InputGroup</div><br>
+            <div class="p">By adding prepended and appended content to an input field, you can add common elements to the user’s input. For example, you can add the dollar symbol, the @ for a Twitter username, or anything else that might be common for your application interface.<br />
+            <br />To prepend or append elements to a .form-control−<br>
+            <ul class="con">
+            <br><li>Wrap it in a &lt;div&gt; with class .input-group</li>
+            <br><li>As a next step, within that same &lt;div&gt; , place your extra content inside a &lt;span&gt; with class .input-group-addon.</li>
+            <br><li>Now place this &lt;span&gt; either before or after the &lt;input&gt; element.</li>
+            </ul></div>
+            <div class="head">Basic Input Group</div>
+            <div class="p">The following example demonstrates basic input group −
+            <textarea id="txta" rows="28" cols="65" readonly>
+
+       <div style = "padding: 100px 100px 10px;">
+   
+       <form class = "bs-example bs-example-form" role = "form">
+       <div class = "input-group">
+       <span class = "input-group-addon">@</span>
+       <input type = "text" class = "form-control" placeholder = "twitterhandle">
+       </div>
+		
+       <br>
+
+       <div class = "input-group">
+       <input type = "text" class = "form-control">
+       <span class = "input-group-addon">.00</span>
+       </div>
+		
+       <br>
+      
+       <div class = "input-group">
+       <span class = "input-group-addon">$</span>
+       <input type = "text" class =" form-control">
+       <span class = "input-group-addon">.00</span>
+       </div>
+       </form>
+   
+       </div></textarea></div>
+       <br /><hr />
+            
+            <div class="head">Input Group Sizing</div><br>
+            <div class="p">You can change the size of the input groups, by adding the relative form sizing classes like .input-group-lg, input-group-sm, input-group-xs to the .input-group itself. The contents within will automatically resize.
+            <br /><br />Following examples demonstrates this −
+            
+            
+           <br> <textarea id="txta" rows="29" cols="65" readonly>
+
+       <div style = "padding: 100px 100px 10px;">
+   
+       <form class = "bs-example bs-example-form" role = "form">
+       <div class = "input-group input-group-lg">
+       <span class = "input-group-addon">@</span>
+       <input type = "text" class = "form-control" placeholder = "Twitterhandle">
+       </div>
+		
+       <br>
+
+       <div class = "input-group">
+       <span class = "input-group-addon">@</span>
+       <input type = "text" class = "form-control" placeholder = "Twitterhandle">
+       </div>
+		
+       <br>
+
+       <div class = "input-group input-group-sm">
+       <span class = "input-group-addon">@</span>
+       <input type = "text" class = "form-control" placeholder = "Twitterhandle">
+       </div>
+       </form>
+   
+       </div>
+            </textarea></div>
+            <br /><hr />
+            
+    
+<div class="head">Checkboxes and Radio Addons</div><br>
+    <div class="p">
+        You can preappend or append radio buttons and checkboxes instead of text as demonstrated in the following example −<br>
+
+            
+            <textarea id="txta" rows="33" cols="65" readonly>
+
+      <div style = "padding: 100px 100px 10px;">
+   
+      <form class = "bs-example bs-example-form" role = "form">
+      <div class = "row">
+         
+      <div class = "col-lg-6">
+      <div class = "input-group">
+               
+      <span class = "input-group-addon">
+      <input type = "checkbox">
+      </span>
+               
+      <input type = "text" class = "form-control">
+      </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 --><br>
+         
+      <div class = "col-lg-6">
+      <div class = "input-group">
+               
+      <span class = "input-group-addon">
+      <input type = "radio">
+      </span>
+               
+      <input type = "text" class = "form-control">
+      </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+         
+      </div><!-- /.row -->
+      </form>
+   
+      </div></textarea></div>
+      <br /><hr />
+            <div class="head">Button Addons</div><br>
+            <br>  <div class="p">You can even preappend or append buttons in input groups. Instead of .input-group-addon class, you'll need to use class .input-group-btn to wrap the buttons. This is required due to the default browser styles that cannot be overridden. Following examples demonstrates this −<br>
+            
+            <textarea id="txta" rows="38" cols="65" readonly>
+
+      <div style = "padding: 100px 100px 10px;">
+   
+      <form class = "bs-example bs-example-form" role = "form">
+      <div class = "row">
+         
+      <div class = "col-lg-6">
+      <div class = "input-group">
+             
+      <span class = "input-group-btn">
+      <button class = "btn btn-default" type = "button">
+      Go!
+      </button>
+      </span>
+					
+      <input type = "text" class = "form-control">
+               
+      </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 --><br>
+         
+      <div class = "col-lg-6">
+      <div class = "input-group">
+      <input type = "text" class = "form-control">
+               
+      <span class = "input-group-btn">
+      <button class = "btn btn-default" type = "button">
+      Go!
+      </button>
+      </span>
+               
+      </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+         
+      </div><!-- /.row -->
+      </form>
+   
+     </div>
+            </textarea></div>
+            <br /><hr />
+            <div class="head">Buttons with Dropdowns</div><br>
+            <div class="p">Adding buttons with dropdown menus in input groups can be done by simply wrapping the button and dropdown menu in a .input-group-btn class as demonstrated in the following example −<br>
+            <textarea id="txta" rows="58" cols="65" readonly>
+
+   <div style = "padding: 100px 100px 10px;">
+   
+   <form class = "bs-example bs-example-form" role = "form">
+   <div class = "row">
+         
+   <div class = "col-lg-6">
+   <div class = "input-group">
+               
+   <div class = "input-group-btn">
+   <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown">
+   DropdownMenu 
+   <span class = "caret"></span>
+   </button>
+                  
+   <ul class = "dropdown-menu">
+    <li><a href = "#">Action</a></li>
+    <li><a href = "#">Another action</a></li>
+    <li><a href = "#">Something else here</a></li>
+    <li class = "divider"></li>
+    <li><a href = "#">Separated link</a></li>
+   </ul>
+   </div><!-- /btn-group -->
+               
+   <input type = "text" class = "form-control">
+   </div><!-- /input-group -->
+   </div><!-- /.col-lg-6 --><br>
+         
+   <div class = "col-lg-6">
+   <div class = "input-group">
+               
+   <input type = "text" class = "form-control">
+   <div class = "input-group-btn">
+                  
+   <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown">
+   DropdownMenu 
+   <span class = "caret"></span>
+   </button>
+                  
+   <ul class = "dropdown-menu pull-right">
+    <li><a href = "#">Action</a></li>
+    <li><a href = "#">Another action</a></li>
+    <li><a href = "#">Something else here</a></li>                 
+    <li class = "divider"></li>
+    <li><a href = "#">Separated link</a></li>
+   </ul>
+   </div><!-- /btn-group -->
+               
+   </div><!-- /input-group -->
+   </div><!-- /.col-lg-6 -->
+         
+   </div><!-- /.row -->
+   </form>
+   
+   </div></textarea></div>
+   <br /><hr />         
+            <div class="head">Segmented Buttons</div>
+            <div class="p">To segment button dropdowns in input groups, use the same general style as the dropdown button, but add a primary action along with the dropdown as can be seen in the following example −
+            <textarea id="txta" rows="66" cols="65" readonly>
+
+   <div style = "padding: 100px 100px 10px;">
+   
+   <form class = "bs-example bs-example-form" role = "form">
+   <div class = "row">
+         
+   <div class = "col-lg-6">
+   <div class = "input-group">
+               
+   <div class = "input-group-btn">
+   <button type = "button" class = "btn btn-default" tabindex = "-1">Dropdown Menu</button>
+                  
+   <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown" tabindex = "-1">
+   <span class = "caret"></span>
+   <span class = "sr-only">Toggle Dropdown</span>
+   </button>
+                  
+   <ul class = "dropdown-menu">
+     <li><a href = "#">Action</a></li>
+     <li><a href ="#">Another action</a></li>
+     <li><a href = "#">Something else here</a></li>                  
+     <li class = "divider"></li>
+     <li><a href = "#">Separated link</a></li>
+   </ul>
+                  
+   </div><!-- /btn-group -->
+   <input type = "text" class = "form-control">
+              
+   </div><!-- /input-group -->
+   </div><!-- /.col-lg-6 --><br>
+        
+   <div class = "col-lg-6">
+   <div class = "input-group">
+   <input type = "text" class = "form-control">
+   <div class = "input-group-btn">
+                  
+   <button type = "button" class = "btn btn-default" tabindex = "-1">
+   Dropdown Menu
+   </button>
+                  
+   <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown" tabindex = "-1">
+                     
+   <span class = "caret"></span>
+   <span class = "sr-only">Toggle Dropdown</span>
+   </button>
+                 
+   <ul class = "dropdown-menu pull-right">
+    <li><a href = "#">Action</a></li>
+    <li><a href = "#">Another action</a></li>
+    <li><a href = "#">Something else here</a></li>                  
+    <li class = "divider"></li>
+    <li><a href = "#">Separated link</a></li>
+   </ul>
+               
+   </div><!-- /btn-group -->
+   </div><!-- /input-group -->
+   </div><!-- /.col-lg-6 -->
+         
+   </div><!-- /.row -->
+   </form>
+   
+   </div></textarea></div>
+	
+    </div>
+    </div>
+    </div>
+   
+</body>
+</html>
+                    
+                    

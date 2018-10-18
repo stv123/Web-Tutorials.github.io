@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>BOOTSTRAP :Typography</title>
+    <link href="CSS/tutes.css" rel="Stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+    <table id="header1">
+    <tr><td style="width:25%">
+    <img src="images/lg.png"alt="logo" width="230px"/>
+    </td>
+    <td class="style1"> <span class="style3">Welcome to Web Tutorial</span><br />
+        <span class="style2">An Easy Way to Learn</span>
+    </td></tr>
+    </table>	
+	<hr />
+	<div class="menu">
+				
+	<ul id="nav">
+		<li><a href="../../index.html">HOME </a></li>
+		<li><a href="../../Aboutus/index.html">ABOUT US </a></li>
+		<li><a href="../../wt.pdf" target="_blank">SYLLABUS </a></li>
+		<li><a href="#">SUBJECTS </a>
+		<ul>
+			<li><a href="../Html_Tutorials/html_introduction.htm" target="_blank">HTML</a></li>
+			<li><a href="../CSS_Tutorials/css_introduction.htm" target="_blank">CSS</a></li>
+			<li><a href="../JavaScript_Tutorials/js_introduction.htm" target="_blank">JavaScript</a></li>
+			<li><a href="../JQuery_Tutorials/jq_introduction.htm" target="_blank">Jquery</a></li>
+			<li><a href="../PHP_Tutorials/php_introduction.htm" target="_blank">PHP</a></li>
+			<li><a href="bootstrap_introduction.htm" target="_blank">BootStrap</a></li>
+		</ul>
+		</li>
+		<li><a href="../../Quiz/index.php">QUIZ </a></li>
+		<li><a href="../../Contact/contact-form.php">CONTACT US </a></li>
+	</ul>
+
+	</div>
+
+    <div class="flt">
+        <div class="left"><img src="images\boots_lg.jpg"/>
+            <table class="list">
+                <tr><td><a href="bootstrap_introduction.htm">Bootstrap-Introdution</a></td></tr>
+                <tr><td><a href="bootstrap_environment.htm">Bootstrap-Environment Setup<a></td></tr>
+                <tr><td><a href="bootstrap_gridsystem.htm">Bootstrap-Grid System</a></td></tr>
+                <tr><td><a href="bootstrap_typography.htm">Bootstrap-Typography</a></td></tr>
+                <tr><td><a href="bootstrap_tables.htm">Bootstrap-Tables</a></td></tr>
+                <tr><td><a href="bootstrap_forms.htm">Bootstrap-Forms</a></td></tr>
+                <tr><td><a href="bootstrap_buttons.htm">Bootstrap-Button</a></td></tr>
+                <tr><td><a href="bootstrap_responsive.htm">Bootstrap-Responsive</a></td></tr>
+                <tr><td><a href="bootstrap_images.htm">Bootstrap-Images</a></td></tr>
+                <tr><td><a href="bootstrap_glyphicons.htm">Bootstrap-Glyphicons</a></td></tr>
+                <tr><td><a href="bootstrap_buttongroup.htm">Bootstrap-Button Groups</a></td></tr>
+                <tr><td><a href="bootstrap_inputgroup.htm">Bootstrap-Input Groups</a></td></tr>
+            </table>
+        </div>
+    </div>
+
+        <div class="center">
+        <div class="content">
+         <div class="header"><img src="images\boots_title.jpg" style="width:100%; height:100%; " /></div>
+    
+    <div class="head">BOOTSTRAP:-Typography</div>
+            <div class="inn_head">Typography </div>
+            <div class="p">Bootstrap uses Helvetica Neue, Helvetica, Arial, and sans-serif in its default font stack. Using typography feature of Bootstrap you can create headings, paragraphs, lists and other inline elements. Let see learn each one of these in the following sections.</div><br />
+    
+    
+    <div class="head">Heading:</div>
+
+    <div class="p">All HTML headings (h1 to h6) are styled in Bootstrap. An example is shown below −
+            <textarea id="txta" rows="8" cols="65" readonly>
+
+            <h1>I'm Heading1 h1</h1>
+            <h2>I'm Heading2 h2</h2>
+            <h3>I'm Heading3 h3</h3>
+            <h4>I'm Heading4 h4</h4>
+            <h5>I'm Heading5 h5</h5>
+            <h6>I'm Heading6 h6</h6>
+            </textarea></div><br />
+            <div class="p">The above code segment with Bootstrap will produce following result −<br>
+            <textarea id="txta" rows="8" cols="65" readonly>
+
+                I'm Heading1 h1
+                I'm Heading2 h2
+                I'm Heading3 h3
+                I'm Heading4 h4
+                I'm Heading5 h5
+                I'm Heading6 h6
+            </textarea></div>
+            <br /><hr />
+    <div class="head">Lead Body Copy:</div>
+            <div class="p">To add some emphasis to a paragraph, add class = "lead". This will give you a larger font size, lighter weight, and a taller line height as in the following example −
+            <textarea id="txta" rows="10" cols="65" readonly>
+
+            <h2>Lead Example</h2>
+            <p class = "lead">This is an example paragraph demonstrating 
+   the use of lead body copy. This is an example paragraph 
+   demonstrating the use of lead body copy.This is an example 
+   paragraph demonstrating the use of lead body copy.This is an 
+   example paragraph demonstrating the use of lead body copy.
+   This is an example paragraph demonstrating the use of lead body copy.
+   </p>
+            </textarea></div>
+            <br /><hr />
+            <div class="head">Emphasis</div>
+            <div class="p">HTML's default emphasis tags such as &lt;small&gt; sets text at 85% the size of the parent, &lt;strong&gt; emphasizes a text with heavier font-weight, and &lt;em&gt; emphasizes a text in italics.
+            <br>Bootstrap offers a few classes that can be used to provide emphasis on texts as seen in the following example −
+            <textarea id="txta" rows="15" cols="65" readonly>
+
+            <small>This content is within tag</small><br>
+            <strong>This content is within tag</strong><br>
+            <em>This content is within tag and is rendered as italics</em>
+            <br>
+            <p class = "text-left">Left aligned text.</p>
+            <p class = "text-center">Center aligned text.</p>
+            <p class = "text-right">Right aligned text.</p>
+            <p class = "text-muted">This content is muted</p>
+            <p class = "text-primary">This content carries a primary class</p>
+            <p class = "text-success">This content carries a success class</p>
+            <p class = "text-info">This content carries a info class</p>
+            <p class = "text-warning">This content carries a warning class</p>
+            <p class = "text-danger">This content carries a danger class</p></textarea></div>
+            <br /><hr />
+            <div class="head">Abbreviations</div>
+            <div class="p">The HTML &lt;abbr&gt; element provides markup for abbreviations or acronyms, like WWW or HTTP. Bootstrap styles &lt;abbr&gt; elements with a light dotted border along the bottom and reveals the full text on hover (as long as you add that text to the &lt;abbr&gt; title attribute). To get a a slightly smaller font size add .initialism to &lt;abbr&gt;.
+            <textarea id="txta" rows="4" cols="65" readonly>
+
+      <abbr title = "World Wide Web">WWW</abbr><br>
+      <abbr title = "Real Simple Syndication" class = "initialism">RSS</abbr></textarea></div>
+      <br /><hr />
+      <div class="head">Addresses</div>
+      <div class="p">Using &lt;address&gt; tag you can display the contact information on your web page. Since the &lt;address&gt; defaults to display: block; you’ll need to use
+      <br><br />Tags to add line breaks to the enclosed address text.
+      
+      <textarea id="txta" rows="13" cols="65" readonly>
+
+      <address>
+      <strong>Some Company, Inc.</strong><br>
+        007 street<br>
+        Some City, State XXXXX<br>
+     <abbr title = "Phone">P:</abbr> (123) 456-7890
+     </address>
+
+    <address>
+    <strong>Full Name</strong><br>
+    <a href = "mailto:#">mailto@somedomain.com</a>
+    </address>
+            </textarea></div>
+            <br /><hr />
+            <div class="head">Blockquotes</div>
+            <div class="p">You can use the default &lt;blockquote&gt; around any HTML text. Other options include, adding a &lt;small&gt;tag for identifying the source of the quote and right-aligning the blockquote using class .pull-right. The following example demonstrates all these features −−
+            <textarea id="txta" rows="19" cols="65" readonly>
+
+   <blockquote>
+   <p>This is a default blockquote example. This is a default 
+   blockquote example. This is a default blockquote example.This is a default blockquote example. This is a default blockquote example.</p>
+   </blockquote>
+
+      <blockquote>
+      This is a blockquote with a source title.
+     <small>Someone famous in <cite title = "Source Title">Source Title</cite></small>
+     </blockquote>
+
+     <blockquote class = "pull-right">This is a blockquote aligned to the right.
+     <small>Someone famous in <cite title = "Source Title">Source Title</cite></small>
+     </blockquote></textarea></div>
+     <br /><hr />
+            <div class="head">Lists</div>
+            <div class="p">Bootstrap supports ordered lists, unordered lists, and definition lists. −<br>
+            <ul class="con">
+                <li><b>Ordered lists −</b> An ordered list is a list that falls in some sort of sequential order and is prefaced by numbers.</li>
+               <br> <li><b>Unordered lists −</b> An unordered list is a list that doesn’t have any particular order and is traditionally styled with bullets. If you do not want the bullets to appear, then you can remove the styling by using the class .list-unstyled. You can also place all list items on a single line using the class .list-inline.</li>
+                <br><li><b>Definition lists −</b> In this type of list, each list item can consist of both the &lt;dt&gt; and the &lt;dd&gt; elements. &lt;dt&gt; stands for definition term, and like a dictionary, this is the term (or phrase) that is being defined. Subsequently, the &lt;dd&gt; is the definition of the &lt;dt&gt;. You can make terms and descriptions in &lt;dl&gt; line up side-by-side using class dl-horizontal.</li>
+            
+            </ul></div>
+            <div class="p">The following example demonstrates each of these types −<br>
+<textarea id="txta" rows="54" cols="65" readonly>
+
+    <h4>Example of Ordered List</h4>
+<ol>
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+   <li>Item 4</li>
+</ol>
+
+<h4>Example of UnOrdered List</h4>
+
+<ul>
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+   <li>Item 4</li>
+</ul>
+
+<h4>Example of Unstyled List</h4>
+
+<ul class = "list-unstyled">
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+   <li>Item 4</li>
+</ul>
+
+<h4>Example of Inline List</h4>
+
+<ul class = "list-inline">
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+   <li>Item 4</li>
+</ul>
+
+<h4>Example of Definition List</h4>
+
+<dl>
+   <dt>Description 1</dt>
+   <dd>Item 1</dd>
+   <dt>Description 2</dt>
+   <dd>Item 2</dd>
+</dl>
+
+<h4>Example of Horizontal Definition List</h4>
+
+<dl class = "dl-horizontal">
+   <dt>Description 1</dt>
+   <dd>Item 1</dd>
+   <dt>Description 2</dt>
+   <dd>Item 2</dd>
+</dl>
+</textarea></div> 
+
+    </div>
+    </div>
+   </div>
+
+   
+</body>
+</html>
+                    
+                    

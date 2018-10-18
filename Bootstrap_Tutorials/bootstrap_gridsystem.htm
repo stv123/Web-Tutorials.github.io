@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>BOOTSTRAP : Grid System</title>
+    <link href="CSS/tutes.css" rel="Stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+    <table id="header1">
+    <tr><td style="width:25%">
+    <img src="images/lg.png"alt="logo" width="230px"/>
+    </td>
+    <td class="style1"> <span class="style3">Welcome to Web Tutorial</span><br />
+        <span class="style2">An Easy Way to Learn</span>
+    </td></tr>
+    </table>	
+	<hr />
+	<div class="menu">
+				
+	<ul id="nav">
+		<li><a href="../../index.html">HOME </a></li>
+		<li><a href="../../Aboutus/index.html">ABOUT US </a></li>
+		<li><a href="../../wt.pdf" target="_blank">SYLLABUS </a></li>
+		<li><a href="#">SUBJECTS </a>
+		<ul>
+			<li><a href="../Html_Tutorials/html_introduction.htm" target="_blank">HTML</a></li>
+			<li><a href="../CSS_Tutorials/css_introduction.htm" target="_blank">CSS</a></li>
+			<li><a href="../JavaScript_Tutorials/js_introduction.htm" target="_blank">JavaScript</a></li>
+			<li><a href="../JQuery_Tutorials/jq_introduction.htm" target="_blank">Jquery</a></li>
+			<li><a href="../PHP_Tutorials/php_introduction.htm" target="_blank">PHP</a></li>
+			<li><a href="bootstrap_introduction.htm" target="_blank">BootStrap</a></li>
+		</ul>
+		</li>
+		<li><a href="../../Quiz/index.php">QUIZ </a></li>
+		<li><a href="../../Contact/contact-form.php">CONTACT US </a></li>
+	</ul>
+
+	</div>
+
+    <div class="flt">
+        <div class="left"><img src="images\boots_lg.jpg"/>
+            <table class="list">
+                <tr><td><a href="bootstrap_introduction.htm">Bootstrap-Introdution</a></td></tr>
+                <tr><td><a href="bootstrap_environment.htm">Bootstrap-Environment Setup<a></td></tr>
+                <tr><td><a href="bootstrap_gridsystem.htm">Bootstrap-Grid System</a></td></tr>
+                <tr><td><a href="bootstrap_typography.htm">Bootstrap-Typography</a></td></tr>
+                <tr><td><a href="bootstrap_tables.htm">Bootstrap-Tables</a></td></tr>
+                <tr><td><a href="bootstrap_forms.htm">Bootstrap-Forms</a></td></tr>
+                <tr><td><a href="bootstrap_buttons.htm">Bootstrap-Button</a></td></tr>
+                <tr><td><a href="bootstrap_responsive.htm">Bootstrap-Responsive</a></td></tr>
+                <tr><td><a href="bootstrap_images.htm">Bootstrap-Images</a></td></tr>
+                <tr><td><a href="bootstrap_glyphicons.htm">Bootstrap-Glyphicons</a></td></tr>
+                <tr><td><a href="bootstrap_buttongroup.htm">Bootstrap-Button Groups</a></td></tr>
+                <tr><td><a href="bootstrap_inputgroup.htm">Bootstrap-Input Groups</a></td></tr>
+            </table>
+        </div>
+    </div>
+
+        <div class="center">
+        <div class="content">
+         <div class="header"><img src="images\boots_title.jpg" style="width:100%; height:100%; " /></div>
+    
+    <div class="head">
+    BOOTSTRAP:-Grid System
+    </div>
+        <div>
+            <div class="inn_head">What is Grid </div>
+            <div class="p">In graphic design, a grid is a structure (usually two-dimensional) made up of a series of intersecting straight (vertical, horizontal) lines used to structure the content. It is widely used to design layout and content structure in print design. In web design, it is a very effective method to create a consistent layout rapidly and effectively using HTML and CSS.</div><br />
+    
+    
+    <div class="head">
+        What is Bootstrap Grid System?:
+    </div>
+
+    <div class="p">
+        <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.<br>
+            
+        <br><p>Let us understand the above statement. Bootstrap 3 is mobile first in the sense that the code for Bootstrap now starts by targeting smaller screens like mobile devices, tablets, and then “expands” components and grids for larger screens such as laptops, desktops.</p>
+</div>
+<div class="inn_head">Mobile First Strategy
+</div>
+    <ol type="1" class="con">
+       <br> <li><b>Content-</b>Determine what is most important.</li>
+        <br><li><b>Layout-</b>Design to smaller widths first.Base CSS address mobile device first; media queries address for tablet, desktops.</li>
+        <br><li><b>Progressive Enhancement-</b>Add elements as screen size increases.</li>
+    </ol>
+    </div>
+    <br /><hr />
+    <div class="head">Working of Bootstrap Grid System:</div>
+            <div class="p">Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works −
+            <ul class="con">
+                <br><li>Rows must be placed within a <b>.container</b> class for proper alignment and padding.</li>
+                <br><li>Use rows to create horizontal groups of columns.</li>
+                <br><li>Content should be placed within the columns, and only columns may be the immediate children of rows.</li>
+                <br><li>Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. LESS mixins can also be used for more semantic layouts.</li>
+                <br><li>Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and the last column via negative margin on <b>.rows.</b></li>
+                <br><li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <b>.col-xs-4.</b></li>
+
+            </ul></div>
+            <br /><hr />
+            <div class="head">
+            Media Queries
+
+</div>
+            <div class="p">Media query is a really fancy term for "conditional CSS rule". It simply applies some CSS, based on certain conditions set forth. If those conditions are met, the style is applied.
+            <br><br>Media Queries in Bootstrap allow you to move, show and hide content based on the viewport size. Following media queries are used in LESS files to create the key breakpoints in the Bootstrap grid system.
+            <textarea id="txta" rows="13" cols="65" readonly>
+
+            /* Extra small devices (phones, less than 768px) */
+            /* No media query since this is the default in Bootstrap */
+
+            /* Small devices (tablets, 768px and up) */
+            @media (min-width: @screen-sm-min) { ... }
+
+            /* Medium devices (desktops, 992px and up) */
+            @media (min-width: @screen-md-min) { ... }
+
+            /* Large devices (large desktops, 1200px and up) */
+            @media (min-width: @screen-lg-min) { ... }</textarea></div><br />
+            <div class="p">Occasionally these are expanded to include a max-width to limit CSS to a narrower set of devices.
+            <textarea id="txta" rows="8" cols="65" readonly>
+
+    @media (max-width: @screen-xs-max) { ... }
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+    @media (min-width: @screen-lg-min) { ... }</textarea></div><br />
+            <div class="p">Media queries have two parts, a device specification and then a size rule. In the above case, the following rule is set −</div>
+            <textarea id="txta" rows="3" cols="65" readonly>
+
+        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }</textarea>
+        <br /><br /><hr />
+            <div class="head">Grid options</div>
+            <div class="p">The following table summarizes aspects of how Bootstrap grid system works across multiple devices −</div>
+    <table class="alt">
+        <tr>
+            <th></th>
+            <th>Extra small devices Phones (768px)</th>
+                <th>Small devices Tablets (≥768px)</th>
+            <th>Medium devices Desktops (≥992px)</th>
+            <th>Large devices Desktops (≥1200px)</th>
+        </tr>
+        <tr>
+            <td>Grid behavior</td>
+            <td>Horizontal at all times	</td>
+            <td>Collapsed to start, horizontal above breakpoints</td>
+            <td>Collapsed to start, horizontal above breakpoints</td>
+            <td>Collapsed to start, horizontal above breakpoints</td>
+        </tr>
+        <tr>
+            <td>Max container width	</td>
+            <td>None (auto)	</td>
+            <td>750px</td>
+            <td>970px</td>
+            <td>1170px</td>
+        </tr>
+        <tr>
+            <td>Class prefix</td>
+            <td>.col-xs-</td>
+            <td>.col-sm-</td>
+            <td>.col-md-</td>
+            <td>.col-lg-</td>
+        </tr>
+        <tr>
+            <td># of columns</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Max column width</td>
+            <td>Auto</td>
+            <td>60px</td>
+            <td>78px</td>
+            <td>95px</td>
+        </tr>
+        <tr>
+            <td>Gutter width</td>
+            <td>30px</td>
+            <td>30px</td>
+            <td>30px</td>
+            <td>30px</td>
+        </tr>
+        <tr>
+            <td>Nestable</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+        <td>Offsets	</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        </tr>
+            <tr>
+            <td>Column ordering	</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+    </table>
+    <br /><hr />
+            <div class="head">Basic Grid Structure</div>
+            <div class="p">Following is basic structure of Bootstrap grid −
+            <textarea id="txta" rows="16" cols="65" readonly>
+
+            <div class = "container">
+   
+            <div class = "row">
+            <div class = "col-*-*"></div>
+            <div class = "col-*-*"></div>
+            </div>
+   
+            <div class = "row">...</div>
+	
+            </div>
+
+            <div class = "container">
+                ....
+            </div>
+            </textarea></div>
+            <br /><hr />
+            <div class="head">Responsive column resets</div>
+            <div class="p">With the four tiers of grids available, you are bound to run into issues where at certain breakpoints, the columns don't clear quite right as one is taller than the other. To fix that, use a combination of a class .clearfix and the responsive utility classes as shown in the following example −
+             
+<textarea id="txta" rows="42" cols="65" readonly>
+
+        <div class = "container">
+        <div class = "row" >
+   
+        <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         </div>
+      
+        <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.</p>
+         
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut.</p>
+        </div>
+
+        <div class = "clearfix visible-xs"></div>
+      
+        <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      
+        <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim</p>
+        </div>
+      
+        </div>
+        </div>
+    </textarea></div> 
+    <br /><hr />
+            <div class="head">Offset Columns</div>
+            <div class="p">Offsets are a useful feature for more specialized layouts. They can be used to push columns over for more spacing, (for example). The <b>.col-xs = *</b> classes don’t support offsets, but they are easily replicated by using an empty cell.
+            <br /><br />To use offsets on large displays, use the <b>.col-md-offset-*</b> classes. These classes increase the left margin of a column by * columns where * range from <b>1 to 11</b>.
+            <br /><br />In the following example, we have &lt;div&gt; class = "col-md-6">..&lt;/div&gt;, We will center this using class <b>.col-md-offset-3</b><br />
+            <textarea id="txta" rows="14" cols="65" readonly>
+
+            <div class = "container">
+
+            <h1>Hello, world!</h1>
+
+            <div class = "row" >
+            <div class = "col-xs-6 col-md-offset-3" style = "background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            </div>
+	    </div>
+            </textarea></div>
+    </div>
+    </div>
+   </div>
+
+   
+</body>
+</html>
+                    
+                    

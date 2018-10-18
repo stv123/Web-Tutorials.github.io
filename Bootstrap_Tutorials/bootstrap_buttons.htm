@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>BOOTSTRAP : Buttons</title>
+    <link href="CSS/tutes.css" rel="Stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+    <table id="header1">
+    <tr><td style="width:25%">
+    <img src="images/lg.png"alt="logo" width="230px"/>
+    </td>
+    <td class="style1"> <span class="style3">Welcome to Web Tutorial</span><br />
+        <span class="style2">An Easy Way to Learn</span>
+    </td></tr>
+    </table>	
+	<hr />
+	<div class="menu">
+				
+	<ul id="nav">
+		<li><a href="../../index.html">HOME </a></li>
+		<li><a href="../../Aboutus/index.html">ABOUT US </a></li>
+		<li><a href="../../wt.pdf" target="_blank">SYLLABUS </a></li>
+		<li><a href="#">SUBJECTS </a>
+		<ul>
+			<li><a href="../Html_Tutorials/html_introduction.htm" target="_blank">HTML</a></li>
+			<li><a href="../CSS_Tutorials/css_introduction.htm" target="_blank">CSS</a></li>
+			<li><a href="../JavaScript_Tutorials/js_introduction.htm" target="_blank">JavaScript</a></li>
+			<li><a href="../JQuery_Tutorials/jq_introduction.htm" target="_blank">Jquery</a></li>
+			<li><a href="../PHP_Tutorials/php_introduction.htm" target="_blank">PHP</a></li>
+			<li><a href="bootstrap_introduction.htm" target="_blank">BootStrap</a></li>
+		</ul>
+		</li>
+		<li><a href="../../Quiz/index.php">QUIZ </a></li>
+		<li><a href="../../Contact/contact-form.php">CONTACT US </a></li>
+	</ul>
+
+	</div>
+
+    <div class="flt">
+        <div class="left"><img src="images\boots_lg.jpg"/>
+            <table class="list">
+                <tr><td><a href="bootstrap_introduction.htm">Bootstrap-Introdution</a></td></tr>
+                <tr><td><a href="bootstrap_environment.htm">Bootstrap-Environment Setup<a></td></tr>
+                <tr><td><a href="bootstrap_gridsystem.htm">Bootstrap-Grid System</a></td></tr>
+                <tr><td><a href="bootstrap_typography.htm">Bootstrap-Typography</a></td></tr>
+                <tr><td><a href="bootstrap_tables.htm">Bootstrap-Tables</a></td></tr>
+                <tr><td><a href="bootstrap_forms.htm">Bootstrap-Forms</a></td></tr>
+                <tr><td><a href="bootstrap_buttons.htm">Bootstrap-Button</a></td></tr>
+                <tr><td><a href="bootstrap_responsive.htm">Bootstrap-Responsive</a></td></tr>
+                <tr><td><a href="bootstrap_images.htm">Bootstrap-Images</a></td></tr>
+                <tr><td><a href="bootstrap_glyphicons.htm">Bootstrap-Glyphicons</a></td></tr>
+                <tr><td><a href="bootstrap_buttongroup.htm">Bootstrap-Button Groups</a></td></tr>
+                <tr><td><a href="bootstrap_inputgroup.htm">Bootstrap-Input Groups</a></td></tr>
+            </table>
+        </div>
+    </div>
+
+        <div class="center">
+        <div class="content">
+         <div class="header"><img src="images\boots_title.jpg" style="width:100%; height:100%; " /></div>
+    
+    <div class="head">BOOTSTRAP:-Button</div>
+            <div class="inn_head">Button Styles </div><br>
+            <table class="alt">
+        <tr>
+            <th>Class</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>btn	</td>
+            <td>Default/ Standard button.</td>
+        </tr>
+        <tr>
+            <td>btn-primary	</td>
+            <td>Provides extra visual weight and identifies the primary action in a set of buttons.</td>
+        </tr>
+        <tr>
+            <td>btn-success	</td>
+            <td>Indicates a successful or positive action.</td>
+        </tr>
+        <tr>
+            <td>btn-info	</td>
+            <td>Contextual button for informational alert messages.
+</td>
+        </tr>
+        <tr>
+            <td>btn-warning	</td>
+            <td>Indicates caution should be taken with this action.</td>
+        </tr>
+        <tr>
+            <td>btn-danger	</td>
+            <td>Indicates a dangerous or potentially negative action.</td>
+        </tr>
+        <tr>
+            <td>btn-link	</td>
+            <td>Deemphasize a button by making it look like a link while maintaining button behavior.</td>
+        </tr>
+    </table><br>
+
+    <div class="p">The following example demonstrates all the above button classes −<br>
+            <textarea id="txta" rows="23" cols="65">
+            <!-- Standard button -->
+<button type = "button" class = "btn btn-default">Default Button</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type = "button" class = "btn btn-primary">Primary Button</button>
+
+<!-- Indicates a successful or positive action -->
+<button type = "button" class = "btn btn-success">Success Button</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type = "button" class = "btn btn-info">Info Button</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type = "button" class = "btn btn-warning">Warning Button</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type = "button" class = "btn btn-danger">Danger Button</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type = "button" class = "btn btn-link">Link Button</button></textarea></div>
+            <br /><hr />
+        
+
+    <div class="head">Button Size:</div>
+            <br><div class="p">The following table summarizes the classes used to get buttons of various sizes −</div>
+             <table class="alt">
+        <tr>
+            <th>Class</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>.btn-lg	</td>
+            <td>This makes the button size large.</td>
+        </tr>
+        <tr>
+            <td>.btn-sm	</td>
+            <td>This makes the button size small.</td>
+        </tr>
+        <tr>
+            <td>.btn-xs	</td>
+            <td>This makes the button size extra small.</td>
+        </tr>
+        <tr>
+            <td>.btn-block	</td>
+            <td>This creates block level buttons—those that span the full width of a parent.</td>
+        </tr>
+        
+    </table>
+        
+    
+         <br>   <div class="p">The following example demonstrates this −<br>
+            <textarea id="txta" rows="51" cols="65" readonly>
+
+     <p>
+    <button type = "button" class = "btn btn-primary btn-lg">
+        Large Primary button
+    </button>
+   
+    <button type = "button" class = "btn btn-default btn-lg">
+        Large button
+    </button>
+    </p>
+
+    <p>
+    <button type = "button" class = "btn btn-primary">
+        Default size Primary button
+    </button>
+   
+    <button type = "button" class = "btn btn-default">
+        Default size button
+    </button>
+    </p>
+
+    <p>
+    <button type = "button" class = "btn btn-primary btn-sm">
+        Small Primary button
+    </button>
+   
+    <button type = "button" class = "btn btn-default btn-sm">
+        Small button
+    </button>
+    </p>
+
+    <p>
+    <button type = "button" class = "btn btn-primary btn-xs">
+        Extra small Primary button
+    </button>
+   
+    <button type = "button" class = "btn btn-default btn-xs">
+        Extra small button
+    </button>
+    </p>
+
+    <p>
+    <button type = "button" class = "btn btn-primary btn-lg btn-block">
+        Block level Primary button
+    </button>
+   
+    <button type = "button" class = "btn btn-default btn-lg btn-block">
+        Block level button
+    </button>
+    </p></textarea></div>
+    <br /><hr />
+            <div class="head">Button State</div><br>
+            <div class="p">Bootstrap provides classes which allow you to change the state of buttons as active, disabled etc. each of which are discussed in the following sections.</div>
+            <div class="inn_head">Active State</div>
+            <div class="p">Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. The following table summarizes classes used to make button elements and anchor elements active −</div><br>
+            <table class="alt">
+                <tr>
+                <th>Element</th>
+                    <th>Class</th>
+                
+                </tr>
+                <tr>
+                    <td>Button element	</td>
+                    <td>Use .active class to show that it is activated.</td>
+                </tr>
+                <tr>
+                <td>Anchor element	</td>
+                <td>Use .active class to &lt;a&gt; buttons to show that it is activated.</td></tr>
+            
+            
+            </table>
+            <br>
+            <div class="p">The following example demonstrates this −<br>
+            
+            
+            <textarea id="txta" rows="21" cols="65" readonly>
+
+     <p>
+    <button type = "button" class = "btn btn-default btn-lg ">
+         Default Button
+    </button>
+   
+    <button type = "button" class = "btn btn-default btn-lg active">
+          Active Button
+    </button>
+    </p>
+
+    <p>
+    <button type = "button" class = "btn btn-primary btn-lg">
+        Primary button
+    </button>
+   
+    <button type = "button" class = "btn btn-primary btn-lg active">
+         Active Primary button
+    </button>
+    </p></textarea></div>
+            <div class="inn_head">Disabled State</div>
+            <div class="p">When you disable a button, it will fade in color by 50%, and lose the gradient.<br /><br />
+            The following table summarizes classes used to make button element and anchor element disabled −</div>
+    <table class="alt">
+        <tr>
+            <th>Element</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>Button element	</td>
+            <td>Add the disabled attribute to &lt;button&gt; buttons.	</td>
+        </tr>
+        <tr>
+            <td>Anchor element		</td>
+            <td>Add the disabled class to &lt;a&gt; buttons.</td>
+        </tr>
+    </table>
+<br />
+            <div class="p">The following example demonstrates this  −<br />
+            <textarea id="txta" rows="43" cols="65" readonly>
+
+     <p>
+    <button type = "button" class = "btn btn-default btn-lg">
+          Default Button
+    </button>
+   
+    <button type = "button" class = "btn btn-default btn-lg" disabled = "disabled">
+          Disabled Button
+    </button>
+    </p>
+
+    <p>
+    <button type = "button" class = "btn btn-primary btn-lg">
+        Primary button
+    </button>
+   
+    <button type = "button" class = "btn btn-primary btn-lg" disabled = "disabled">
+         Disabled Primary button
+    </button>
+    </p>
+
+    <p>
+    <a href = "#" class = "btn btn-default btn-lg" role = "button">
+         Link
+    </a>
+   
+    <a href = "#" class = "btn btn-default btn-lg disabled" role = "button">
+          Disabled Link
+    </a>
+    </p>
+
+    <p>
+    <a href = "#" class = "btn btn-primary btn-lg" role = "button">
+          Primary link
+    </a>
+   
+    <a href = "#" class = "btn btn-primary btn-lg disabled" role = "button">
+          Disabled Primary link
+    </a>
+    </p>
+            </textarea></div>
+	
+    </div>
+    </div>
+   </div>
+
+   
+</body>
+</html>
+                    
+                    

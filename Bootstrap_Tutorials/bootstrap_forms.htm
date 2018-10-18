@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>BOOTSTRAP :Forms</title>
+    <link href="CSS/tutes.css" rel="Stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+    <table id="header1">
+    <tr><td style="width:25%">
+    <img src="images/lg.png"alt="logo" width="230px"/>
+    </td>
+    <td class="style1"> <span class="style3">Welcome to Web Tutorial</span><br />
+        <span class="style2">An Easy Way to Learn</span>
+    </td></tr>
+    </table>	
+	<hr />
+	<div class="menu">
+				
+	<ul id="nav">
+		<li><a href="../../index.html">HOME </a></li>
+		<li><a href="../../Aboutus/index.html">ABOUT US </a></li>
+		<li><a href="../../wt.pdf" target="_blank">SYLLABUS </a></li>
+		<li><a href="#">SUBJECTS </a>
+		<ul>
+			<li><a href="../Html_Tutorials/html_introduction.htm" target="_blank">HTML</a></li>
+			<li><a href="../CSS_Tutorials/css_introduction.htm" target="_blank">CSS</a></li>
+			<li><a href="../JavaScript_Tutorials/js_introduction.htm" target="_blank">JavaScript</a></li>
+			<li><a href="../JQuery_Tutorials/jq_introduction.htm" target="_blank">Jquery</a></li>
+			<li><a href="../PHP_Tutorials/php_introduction.htm" target="_blank">PHP</a></li>
+			<li><a href="bootstrap_introduction.htm" target="_blank">BootStrap</a></li>
+		</ul>
+		</li>
+		<li><a href="../../Quiz/index.php">QUIZ </a></li>
+		<li><a href="../../Contact/contact-form.php">CONTACT US </a></li>
+	</ul>
+
+	</div>
+
+    <div class="flt">
+        <div class="left"><img src="images\boots_lg.jpg"/>
+            <table class="list">
+                <tr><td><a href="bootstrap_introduction.htm">Bootstrap-Introdution</a></td></tr>
+                <tr><td><a href="bootstrap_environment.htm">Bootstrap-Environment Setup<a></td></tr>
+                <tr><td><a href="bootstrap_gridsystem.htm">Bootstrap-Grid System</a></td></tr>
+                <tr><td><a href="bootstrap_typography.htm">Bootstrap-Typography</a></td></tr>
+                <tr><td><a href="bootstrap_tables.htm">Bootstrap-Tables</a></td></tr>
+                <tr><td><a href="bootstrap_forms.htm">Bootstrap-Forms</a></td></tr>
+                <tr><td><a href="bootstrap_buttons.htm">Bootstrap-Button</a></td></tr>
+                <tr><td><a href="bootstrap_responsive.htm">Bootstrap-Responsive</a></td></tr>
+                <tr><td><a href="bootstrap_images.htm">Bootstrap-Images</a></td></tr>
+                <tr><td><a href="bootstrap_glyphicons.htm">Bootstrap-Glyphicons</a></td></tr>
+                <tr><td><a href="bootstrap_buttongroup.htm">Bootstrap-Button Groups</a></td></tr>
+                <tr><td><a href="bootstrap_inputgroup.htm">Bootstrap-Input Groups</a></td></tr>
+            </table>
+        </div>
+    </div>
+
+        <div class="center">
+        <div class="content">
+         <div class="header"><img src="images\boots_title.jpg" style="width:100%; height:100%; " /></div>
+
+    
+    <div class="head">BOOTSTRAP:-Forms</div>
+            <div class="inn_head">Form Layout </div>
+            <div class="p">Bootstrap provides you with following types of form layouts −<br />
+            <ul class="con">
+            <li>Vertical (default) form</li>
+            <li>In-line form</li>
+            <li>Horizontal form</li></ul></div>
+    
+    
+    <div class="head"> Vertical or Basic Form:</div>
+
+    <div class="p">
+        The basic form structure comes with Bootstrap; individual form controls automatically receive some global styling. To create a basic form do the following −
+            <ul class="con">
+            <br><li>Add a role form to the parent &lt;form&gt; element.</li>
+            <br><li>Wrap labels and controls in a &lt;div&gt; with class .form-group. This is needed for optimum spacing.</li>
+            <br><li>Add a class of .form-control to all textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements.</li>
+            </ul><br>
+            <textarea id="txta" rows="22" cols="65" readonly>
+
+       <form role = "form">
+
+       <div class = "form-group">
+       <label for = "name">Name</label>
+       <input type = "text" class = "form-control" id = "name" placeholder = "Enter Name">
+       </div>
+   
+       <div class = "form-group">
+       <label for = "inputfile">File input</label>
+       <input type = "file" id = "inputfile">
+       <p class = "help-block">Example block-level help text here.</p>
+       </div>
+   
+       <div class = "checkbox">
+       <label><input type = "checkbox"> Check me out</label>
+       </div>
+   
+       <button type = "submit" class = "btn btn-default">Submit</button>
+       </form>
+            </textarea></div>
+            <br /><hr />
+            <div class="head">Inline Form</div>
+            <div class="p">To create a form where all of the elements are inline, left aligned and labels are alongside, add the class .form-inline to the &lt;form&gt; tag.<br>
+       <textarea id="txta" rows="20" cols="65" readonly>
+        <form class = "form-inline" role = "form">
+   
+        <div class = "form-group">
+        <label class = "sr-only" for = "name">Name</label>
+        <input type = "text" class = "form-control" id = "name" placeholder = "Enter Name">
+        </div>
+   
+        <div class = "form-group">
+        <label class = "sr-only" for = "inputfile">File input</label>
+        <input type = "file" id = "inputfile">
+        </div>
+   
+        <div class = "checkbox">
+        <label><input type = "checkbox"> Check me out</label>
+        </div>
+   
+        <button type = "submit" class = "btn btn-default">Submit</button>
+        </form>
+            
+            </textarea></div>
+            <br /><hr />
+    <div class="head">Horizontal Form:</div>
+            <div class="p">Horizontal forms stands apart from the others not only in the amount of markup, but also in the presentation of the form. To create a form that uses the horizontal layout, do the following −
+            <ul class="con">
+           <br> <li>Add a class of .form-horizontal to the parent &lt;form&gt; element.</li>
+            <br><li>Wrap labels and controls in a &lt;div&gt; with class .form-group.</li>
+            <br><li>Add a class of .control-label to the labels.</li></ul>
+            <textarea id="txta" rows="39" cols="65" readonly>
+
+     <form class = "form-horizontal" role = "form">
+   
+    <div class = "form-group">
+    <label for = "firstname" class = "col-sm-2 control-label">First Name</label>
+		
+    <div class = "col-sm-10">
+    <input type = "text" class = "form-control" id = "firstname" placeholder = "Enter First Name">
+    </div>
+    </div>
+   
+    <div class = "form-group">
+    <label for = "lastname" class = "col-sm-2 control-label">Last Name</label>
+		
+    <div class = "col-sm-10">
+    <input type = "text" class = "form-control" id = "lastname" placeholder = "Enter Last Name">
+    </div>
+    </div>
+   
+    <div class = "form-group">
+    <div class = "col-sm-offset-2 col-sm-10">
+    <div class = "checkbox">
+    <label><input type = "checkbox"> Remember me</label>
+    </div>
+    </div>
+   </div>
+   
+   <div class = "form-group">
+   <div class = "col-sm-offset-2 col-sm-10">
+   <button type = "submit" class = "btn btn-default">Sign in</button>
+   </div>
+   </div>
+	
+   </form>
+            </textarea></div>
+            <br /><hr />
+       <div class="head">Supported Form Controls</div>
+            <div class="p">Bootstrap natively supports the most common form controls mainly input, textarea, checkbox, radio, and select.</div>
+            <div class="inn_head">Inputs</div>
+            <div class="p">The most common form text field is the input field. This is where users will enter most of the essential form data. Bootstrap offers support for all native HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color. Proper type declaration is required to make Inputs fully styled.
+<textarea id="txta" rows="10" cols="65" readonly>
+
+    <form role = "form">
+   
+   <div class = "form-group">
+      <label for = "name">Label</label>
+      <input type = "text" class = "form-control" placeholder = "Text input">
+   </div>
+  
+    </form>
+</textarea></div>
+<br /><br />
+        <div class="inn_head">Textarea</div>
+        <div class="p">The textarea is used when you need multiple lines of input. Change rows attribute as necessary (fewer rows = smaller box, more rows = bigger box).<br>
+            <textarea id="txta" rows="10" cols="65" readonly>
+
+            <form role = "form">
+   
+            <div class = "form-group">
+            <label for = "name">Text Area</label>
+            &lt;textarea class = "form-control" rows = "3">&lt;/textarea>
+            </div>
+   
+            &lt;/form></textarea></div>
+            <br /><br />
+            <div class="inn_head">CheckBoxes and Radio Buttons</div>
+            
+            <div class="p">Checkboxes and radio buttons are great when you want users to choose from a list of preset options.
+            <ul class="con">
+            <br><li>When building a form, use checkbox if you want the user to select any number of options from a list. Use radio if you want to limit the user to just one selection.</li>
+            <br><li>Use .checkbox-inline or .radio-inline class to a series of checkboxes or radios for controls appear on the same line.</li></ul><br />
+            <textarea id="txta" rows="61" cols="65" readonly>
+
+      <label for = "name">Example of Default Checkbox and radio button </label>
+
+      <div class = "checkbox">
+      <label>
+      <input type = "checkbox" value = "">Option 1
+      </label>
+      </div>
+
+      <div class = "checkbox">
+      <label>
+      <input type = "checkbox" value = "">Option 2
+      </label>
+      </div>
+
+      <div class = "radio">
+      <label>
+      <input type = "radio" name = "optionsRadios" id = "optionsRadios1" value = "option1" checked> Option 1
+      </label>
+      </div>
+
+      <div class = "radio">
+      <label>
+      <input type = "radio" name = "optionsRadios" id = "optionsRadios2" value = "option2">
+      Option 2 - selecting it will deselect option 1
+      </label>
+      </div>
+
+      <label for = "name">Example of Inline Checkbox and radio button </label>
+
+      <div>
+      <label class = "checkbox-inline">
+      <input type = "checkbox" id = "inlineCheckbox1" value = "option1"> Option 1
+      </label>
+   
+      <label class = "checkbox-inline">
+      <input type = "checkbox" id = "inlineCheckbox2" value = "option2"> Option 2
+      </label>
+   
+      <label class = "checkbox-inline">
+      <input type = "checkbox" id = "inlineCheckbox3" value = "option3"> Option 3
+      </label>
+   
+      <label class = "checkbox-inline">
+      <input type = "radio" name = "optionsRadiosinline" id = "optionsRadios3" value = "option1" checked> Option 1
+      </label>
+   
+      <label class = "checkbox-inline">
+      <input type = "radio" name = "optionsRadiosinline" id = "optionsRadios4" value = "option2"> Option 2
+      </label>
+      </div>
+            </textarea></div>
+            <br /><hr />
+            <div class="head">Static Control</div>
+            <div class="p">Use the class .form-control-static on a <p>, when you need to place plain text next to a form label within a horizontal form.
+            <textarea id="txta" rows="23" cols="65" readonly>
+
+      <form class = "form-horizontal" role = "form">
+      <div class = "form-group">
+      <label class = "col-sm-2 control-label">Email</label>
+      
+      <div class = "col-sm-10">
+      <p class = "form-control-static">email@example.com</p>
+      </div>
+      
+      </div>
+   
+      <div class = "form-group">
+      <label for = "inputPassword" class = "col-sm-2 control-label">Password</label>
+      
+      <div class = "col-sm-10">
+      <input type = "password" class = "form-control" id = "inputPassword" placeholder = "Password">
+      </div>
+      
+      </div>
+      </form></textarea></div>
+<br /><hr />
+
+            <div class="head">Form Control States</div>
+            <div class="p">In addition to the :focus (i.e., a user clicks into the input or tabs onto it) state, Bootstrap offers styling for disabled inputs and classes for form validation.</div><br>
+            <div class="inn_head">Input Focus</div>
+            <div class="p">When an input receives :focus, the outline of the input is removed and a box-shadow is applied.</div>
+            <div class="inn_head">Disabled lnputs</div>
+            <div class="p">If you need to disable an input, simply adding the disabled attribute will not only disable it; it will also change the styling and the mouse cursor when the cursor hovers over the element.</div>
+            <div class="inn_head">Disabled Fieldsets</div>
+            <div class="p">Add the disabled attribute to a &lt;fieldset&gt; to disable all the controls within the &lt;fieldset&gt; at once.</div>
+            <div class="inn_head"></div>
+            <div class="p">Bootstrap includes validation styles for errors, warnings, and success messages. To use, simply add the appropriate class (.has-warning, .has-error, or .has-success) to the parent element.
+            
+<textarea id="txta" rows="82" cols="65" readonly>
+
+    <form class = "form-horizontal" role = "form">
+
+    <div class = "form-group">
+    <label class = "col-sm-2 control-label">Focused</label>
+      
+    <div class = "col-sm-10">
+    <input class = "form-control" id = "focusedInput" type = "text" value = "This is focused...">
+    </div>
+    </div>
+   
+    <div class = "form-group">
+    <label for = "inputPassword" class = "col-sm-2 control-label">Disabled</label>
+      
+    <div class = "col-sm-10">
+    <input class = "form-control" id = "disabledInput" type = "text" placeholder = "Disabled input here..." disabled>
+    </div>
+    </div>
+   
+    <fieldset disabled>
+    <div class = "form-group">
+         
+    <label for = "disabledTextInput"  class = "col-sm-2 control-label">
+    Disabled input (Fieldset disabled)
+    </label>
+         
+    <div class = "col-sm-10">
+    <input type = "text" id = "disabledTextInput" class = "form-control" placeholder = "Disabled input">
+    </div>
+    </div>
+      
+    <div class = "form-group">
+    <label for = "disabledSelect"  class = "col-sm-2 control-label">
+    Disabled select menu (Fieldset disabled)
+    </label>
+         
+    <div class = "col-sm-10">
+    <select id = "disabledSelect" class = "form-control">
+    <option>Disabled select</option>
+    </select>
+    </div>
+        
+    </div>
+    </fieldset>
+   
+    <div class = "form-group has-success">
+    <label class = "col-sm-2 control-label" for = "inputSuccess">
+    Input with success
+    </label>
+      
+    <div class = "col-sm-10">
+    <input type = "text" class = "form-control" id = "inputSuccess">
+    </div>
+    </div>
+   
+    <div class = "form-group has-warning">
+    <label class = "col-sm-2 control-label" for = "inputWarning">
+    Input with warning
+    </label>
+      
+    <div class = "col-sm-10">
+    <input type = "text" class = "form-control" id = "inputWarning">
+    </div>
+    </div>
+   
+    <div class = "form-group has-error">
+    <label class = "col-sm-2 control-label" for = "inputError">
+    Input with error
+    </label>
+      
+    <div class = "col-sm-10">
+    <input type = "text" class = "form-control" id = "inputError">
+    </div>
+      
+    </div>
+	
+    </form>
+    </textarea> </div>
+    
+    
+        
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>
+                    
+                    

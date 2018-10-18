@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>BOOTSTRAP : Responsive</title>
+    <link href="CSS/tutes.css" rel="Stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+    <table id="header1">
+    <tr><td style="width:25%">
+    <img src="images/lg.png"alt="logo" width="230px"/>
+    </td>
+    <td class="style1"> <span class="style3">Welcome to Web Tutorial</span><br />
+        <span class="style2">An Easy Way to Learn</span>
+    </td></tr>
+    </table>	
+	<hr />
+	<div class="menu">
+				
+	<ul id="nav">
+		<li><a href="../../index.html">HOME </a></li>
+		<li><a href="../../Aboutus/index.html">ABOUT US </a></li>
+		<li><a href="../../wt.pdf" target="_blank">SYLLABUS </a></li>
+		<li><a href="#">SUBJECTS </a>
+		<ul>
+			<li><a href="../Html_Tutorials/html_introduction.htm" target="_blank">HTML</a></li>
+			<li><a href="../CSS_Tutorials/css_introduction.htm" target="_blank">CSS</a></li>
+			<li><a href="../JavaScript_Tutorials/js_introduction.htm" target="_blank">JavaScript</a></li>
+			<li><a href="../JQuery_Tutorials/jq_introduction.htm" target="_blank">Jquery</a></li>
+			<li><a href="../PHP_Tutorials/php_introduction.htm" target="_blank">PHP</a></li>
+			<li><a href="bootstrap_introduction.htm" target="_blank">BootStrap</a></li>
+		</ul>
+		</li>
+		<li><a href="../../Quiz/index.php">QUIZ </a></li>
+		<li><a href="../../Contact/contact-form.php">CONTACT US </a></li>
+	</ul>
+
+	</div>
+
+    <div class="flt">
+        <div class="left"><img src="images\boots_lg.jpg"/>
+            <table class="list">
+                <tr><td><a href="bootstrap_introduction.htm">Bootstrap-Introdution</a></td></tr>
+                <tr><td><a href="bootstrap_environment.htm">Bootstrap-Environment Setup<a></td></tr>
+                <tr><td><a href="bootstrap_gridsystem.htm">Bootstrap-Grid System</a></td></tr>
+                <tr><td><a href="bootstrap_typography.htm">Bootstrap-Typography</a></td></tr>
+                <tr><td><a href="bootstrap_tables.htm">Bootstrap-Tables</a></td></tr>
+                <tr><td><a href="bootstrap_forms.htm">Bootstrap-Forms</a></td></tr>
+                <tr><td><a href="bootstrap_buttons.htm">Bootstrap-Button</a></td></tr>
+                <tr><td><a href="bootstrap_responsive.htm">Bootstrap-Responsive</a></td></tr>
+                <tr><td><a href="bootstrap_images.htm">Bootstrap-Images</a></td></tr>
+                <tr><td><a href="bootstrap_glyphicons.htm">Bootstrap-Glyphicons</a></td></tr>
+                <tr><td><a href="bootstrap_buttongroup.htm">Bootstrap-Button Groups</a></td></tr>
+                <tr><td><a href="bootstrap_inputgroup.htm">Bootstrap-Input Groups</a></td></tr>
+            </table>
+        </div>
+    </div>
+
+        <div class="center">
+        <div class="content">
+         <div class="header"><img src="images\boots_title.jpg" style="width:100%; height:100%; " /></div>
+    
+    <div class="head">BOOTSTRAP:-Responsive</div>
+            <div class="inn_head">Responsive Utilities</div><br>
+            <div class="p">Bootstrap provides some handful helper classes, for faster mobile-friendly development. These can be used for showing and hiding content by device via media query, combined with large, small, and medium devices.<br>
+            <p><br>Use these sparingly and avoid creating entirely different versions of the same site. Responsive utilities are currently only available for block and table toggling.</p></div>
+            <table class="alt">
+        <tr>
+            <th>Classes</th>
+            <th>Devices</th>
+        </tr>
+        <tr>
+            <td>.visible-xs	</td>
+            <td>Extra small (less than 768px) visible</td>
+                </tr>
+                <tr>
+            <td>.visible-sm	</td>
+            <td>Small (up to 768 px) visible</td>
+                </tr>
+                <tr>
+            <td>btn-success	</td>
+            <td>Indicates a successful or positive action.</td>
+                </tr>
+                <tr>
+            <td>.visible-md	</td>
+            <td>Medium (768 px to 991 px) visible</td>
+                </tr>
+                <tr>
+            <td>.visible-lg	</td>
+            <td>Larger (992 px and above) visible</td>
+                </tr>
+                <tr>
+            <td>.hidden-xs	</td>
+            <td>Extra small (less than 768px) hidden</td>
+                </tr>
+                <tr>
+            <td>.hidden-sm	</td>
+            <td>Small (up to 768 px) hidden</td>
+                </tr>
+                <tr>
+            <td>.hidden-md	</td>
+            <td>Medium (768 px to 991 px) hidden</td>
+                </tr>
+                <tr>
+            <td>.hidden-lg	</td>
+            <td>Larger (992 px and above) hidden</td>
+        </tr>
+    </table><br>
+    <br /><hr />
+<div class="head">Print Classes</div>
+    <div class="p">
+        The following table lists the print classes. Use these for toggling the content for print.
+</div><br>
+            <table class="alt">
+            <tr>
+                <th>Classes</th>
+                <th>Print</th>
+                </tr>
+                <tr>
+                <td>.visible-print	</td>
+                    <td>Yes Visible</td>
+                </tr>
+                <tr>
+                <td>.hidden-print</td>
+                    <td>Visible only to browser not to print.</td>
+                </tr>
+            </table>
+            <div class="inn_head">Example</div>
+            <div class="p">The following example demonstrates the use of above listed helper classes. Resize your browser or load the example on different devices to test the responsive utility classes.
+            <textarea id="txta" rows="37" cols="65" readonly>
+
+        <div class = "container" style = "padding: 40px;">
+        <div class = "row visible-on">
+      
+        <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+        <span class = "hidden-xs">Extra small</span>
+        <span class = "visible-xs">✔ Visible on x-small</span>
+        </div>
+      
+        <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+        <span class = "hidden-sm">Small</span>
+        <span class = "visible-sm">✔ Visible on small</span>
+        </div>
+      
+        <div class = "clearfix visible-xs"></div>
+      
+        <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+        <span class = "hidden-md">Medium</span>
+        <span class = "visible-md">✔ Visible on medium</span>
+        </div>
+      
+        <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+        <span class = "hidden-lg">Large</span>
+        <span class = "visible-lg">✔ Visible on large</span>
+        </div>
+      
+        </div>
+        </textarea></div>
+
+      </div>
+	
+    </div>
+    </div>
+   
+   
+</body>
+</html>
+                    
+                    
